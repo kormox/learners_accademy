@@ -1,0 +1,165 @@
+<!-- CTRL+/  used for line comment in short cut  -->
+<!--When you want "your website" not came in Search-Engine's suggestion. {For example:-<meta name="robots" content="NOINDEX, NOFOLLOW">} -->
+<!-- lorem:- is used for get dummy text. {example:- lorem4 { it will print 4 dummy words for you }} -->
+<!-- for multiple tag ,just multiply it for how many times you want it  -->
+<!-- for multiple curser {hold "ALT" and "click where you want one by one"} -->
+<!-- source.unsplash.com  help you to get the link of random image of -->
+<!-- "title tag" is used for giving name to your website-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="this is discription"> <!-- to add discription of your website -->
+    <meta name="keywords" content="html, html tag, html tutorial, web development">
+    <!-- to add keyword for search of website -->
+    <meta name="robots" content="INDEX, FOLLOW">
+    <!-- <link rel="stylesheet" href="kormox.css"> this is how you add "external css" -->
+    <!-- <script src="/kormox.js"></script> -->
+    <title>Document</title>
+</head>
+<!---------------------------------------------body of PAGE------------------------------------------------------>
+<body>
+    <h1>welcome</h1>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur <strong>this is strong.</strong> adipisicing elit. Unde voluptas possimus
+        nisi impedit earum quas, repellat eos provident architecto, sapiente obcaecati <em>this is emphasized.</em>
+        pariatur odit dicta rerum iusto nobis ducimus eius</p>
+    <!-- <br> is a line breaking tag  -->
+    <!-- <hr> help to make a horizontal line in page -->
+    <p>hello</p>
+    <!-- CTRL+ENTER to jump into new line  -->
+    <a href="https://www.google.com" target="_blank">go to google</a><br>
+    <a href="https://www.linkedin.com" target="_blank">go to linkedin</a><br>
+    <a href="https://www.twitter.com" target="_blank">go to twitter</a><br>
+    <!--used for to add link n your page-->
+    <a href="https://www.facebook.com" target="_blank">go to facebook </a><br>
+    <!-- image is not loaded; hence "ALT" text is shown  -->
+    <img src="kormox.jpg" alt="logo">
+<!-----------------------------------------------------------------lists---------------------------------------------------------------->
+    <ul type="circle">
+        <li>this is my first item of un-ordered list </li>
+        <li>this is my second item of un-ordered list </li>
+        <li>this is my third item of un-ordered list </li>
+    </ul>
+    <!-- we can list another list in list tag as a list  -->
+    <!--
+        <ol>
+            <li>
+                <ol>
+                    <li>
+                        list in list 
+                    </li>
+                </ol>
+            </li>
+        </ol> 
+        -->
+    <ol type="i">
+        <li>this is my first item of ordered list </li>
+        <li>this is my second item of ordered list </li>
+        <li>this is my third item of ordered list </li>
+    </ol>
+<!-------------------------------------------------------------------TABLE------------------------------------------------------------------------->
+    <!-- used to make a chart file of data -->
+    <table>
+        <thead>
+            <!-- it is the head of table-->
+            <tr>
+                <!-- it create the row -->
+                <th>NAME</th>
+                <th>CLASS</th>
+                <th>ROLL </th>
+                <th>SUB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- it is the body of the table -->
+            <tr>
+                <td>kormox</td>
+                <td>11th</td>
+                <td>206</td>
+                <td>pcm</td>
+            </tr>
+            <tr>
+                <td>happy</td>
+                <td>8th</td>
+                <td>11</td>
+                <td>---</td>
+            </tr>
+        </tbody>
+    </table>
+<!----------------------------------------------------------------------FORMS----------------------------------------------------------------------->
+    <form action="backend.php">
+        <!-- form will sent the data {"filled by user"} to the backend file -->
+        <div>
+            <label for="myname">NAME:</label>
+            <input type="text" name="myname" id="myname">
+        </div>
+        <br>
+        <!-- "name" helps backend file to identify the input data and store it on right place  -->
+        <div><label for="myroll">ROLL:</label>
+            <input type="number" name="myroll" id="muroll">
+            <!-- {"number" type input} also contain "e". For eg.; '2e3' => [2 raise to the power 3] -->
+        </div>
+        <br>
+        <div><label for="myemail">EMAIL:</label>
+            <input type="email" name="myemail" id="myemail">
+        </div>
+        <br>
+        <div><label for="dob">DOB:</label>
+            <input type="date" name="dob" id="dob">
+        </div>
+        <br>
+        <div>
+            Gender: male:- <input type="radio" name="mygender">
+            <br>
+            female:- <input type="radio" name="mygender">
+            <br>
+            other:- <input type="radio" name="mygender">
+        </div>
+        <br>
+        <div><label for="accepted">Accept TREM AND CONDITIONS:</label>
+            <!-- {checked} is used to check the "'checkbox' type input"  {by default}-->
+            <input type="checkbox" name="accepted" id="accepted">
+        </div>
+        <br>
+        <div><label for="yourself">tell about yourself</label>
+            <!-- textarea:- is used to get paragraph type input from user -->
+            <br><textarea name="about" id="yourself" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">CAR</label>
+            <select name="mycar" id="car">
+                <option value="ind">INDICA</option>
+                <option value="swf">SWIFT</option>
+                <option value="thar">THAR</option>
+
+        </div>
+        <div>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </div>
+    </form>
+<!----------------------------------------------HTML ENTITIES-------------------------------------------------->
+    <!-- helps to add spacial character on your page -->
+    <div class="container">
+        <p>this is a &nbsp; &nbsp; paragraph with two spaces</p>
+        <p>paragraph is writen like that &lt;p&gt;</p>
+        <p>pound is writen like that &pound;</p>
+        <p>copyright is writen like that &copy;</p>
+        <p>another character is writen like that &rAarr;</p>
+        <p>another character is writen like that &frac12;</p>
+    </div>
+<!----------------------------------------------Sementic Elements----------------------------------------------->
+    <details>
+        <summary>Lorem ipsum dolor sit amet.</summary>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro excepturi ex ipsam quasi quam. Tenetur sunt officiis repellat optio cum accusantium modi inventore, at ut similique libero quae impedit nostrum.
+    </details>  
+</body>
+
+</html>
